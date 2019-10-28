@@ -1,90 +1,61 @@
-html {
-    background-color: #FFC04C;
+* {
+	box-sizing: border-box;
 }
 
 body {
-    width: 75%;
-   margin: 0 auto; 
-
-   display: flex;
-   min-height: 100vh;
-   flex-direction: column;
-   background-color: white;
+	position: relative;
+	font-family: 'Passion One', cursive;
+	font-size: 2em;
 }
 
-#cute_burger {
-    display: block;
-   margin: auto;
+body:after {
+	content : "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: slategray;
+	background-size: cover;
+	background-repeat:no-repeat;
+	width: 100%;
+	min-height: 100vh;
+	opacity : 0.3;
+	z-index: -1;
 }
 
 h1 {
-    text-align: center;
-    font-family: 'Fontdiner Swanky', cursive;
-    font-size: 65px;
-    margin: 50px;
+	color: red;
+	font-size: 2em !important;
 }
 
-.burgerAvailable {
-    font-family: 'Crafty Girls', cursive;
-    font-weight: normal;
-    font-size: 20px;
-    text-align: center;
-
-    border-radius: 25px;
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-    background-color: #b7ffc2;
-    border: none;
+#page-name {
+	text-align: center;
+	margin: 30px 0;
 }
 
-.burgerAvailable:hover {
-    background-color: #81ff94;
+#main-image {
+	height: 150px;
 }
 
-.burgerEaten {
-    font-family: 'Crafty Girls', cursive;
-    font-weight: normal;
-    font-size: 20px;
-    text-align: center;
-
-    border-radius: 25px;
-    margin: 10px;
-    padding: 10px;
-    background-color: #ffd1c9;
+.col-left {
+	padding-left: 20%;
 }
 
-h2 {
-     text-align: center;
-    font-family: 'Fontdiner Swanky', cursive;
-    font-size: 40px;
-    margin: 50px;
+.col-right {
+	text-align: left;
 }
 
-.formContainer {
-    background-color: orange;
+.table-first-col {
+	width: 270px;
 }
 
-.addBurgerButton {
-    font-family: 'Crafty Girls', cursive;
-    font-weight: normal;
-    font-size: 20px;
-    text-align: center;
-
-    border-radius: 25px;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    background-color: #FFC04C;
-    border: none;
+td {
+    height: 50px;
+    vertical-align: center;
 }
 
-.addBurgerButton:active {
-   background-color: #FFC04C;
-}
-
-.burgerFooter {
-   background-color: #FFC04C;
-   padding: 20px 0;
+.create-form {
+	margin-top: 50px;
+	text-align: center;
 }
  
